@@ -39,10 +39,10 @@ public class PolinomioTests {
 
 //	@Test
 //	public void recursivoGrado3() {
-//		double[]coeficientes = {2,-3,5,0};
+//		double[]coeficientes = {1,1,1,0};//{2,-3,5,0};
 //		Polinomio polinomio = new Polinomio(3, coeficientes);
-//		System.out.println("Recursiva Grado 3 " + polinomio.evaluarRecursiva(3));
-//		Assert.assertEquals(42,  polinomio.evaluarRecursiva(3) , 0);
+////		System.out.println("Recursiva Grado 3 " + polinomio.evaluarRecursiva(2));
+//		Assert.assertEquals(14,  polinomio.evaluarRecursiva(2) , 0);
 //	}
 //
 //
@@ -50,14 +50,14 @@ public class PolinomioTests {
 //	public void recursivoGrado6() {
 //		double[]coeficientes = {-5,3,0,-2,7,3,0};
 //		Polinomio polinomio = new Polinomio(6, coeficientes);
-//		//System.out.println("Multiplicacion Sucesiva Grado 6 " + polinomio.evaluarRecursiva(3));
+////		System.out.println("Multiplicacion Sucesiva Grado 6 " + polinomio.evaluarRecursiva(3));
 //		Assert.assertEquals(-2898, polinomio.evaluarRecursiva(3), 0);
 //	}	
 //	@Test
 //	public void recursivoGrado0() {
 //		double[]coeficientes = {2};
 //		Polinomio polinomio = new Polinomio(0, coeficientes);
-//		System.out.println("Recursiva Grado 0 " + polinomio.evaluarRecursiva(2));
+////		System.out.println("Recursiva Grado 0 " + polinomio.evaluarRecursiva(2));
 //		Assert.assertEquals(2, polinomio.evaluarRecursiva(2), 0);
 //	}
 //	
@@ -65,42 +65,42 @@ public class PolinomioTests {
 //	public void recursivoGrado1() {
 //		double[]coeficientes = {2,3};
 //		Polinomio polinomio = new Polinomio(1, coeficientes);
-//		System.out.println("Recursiva Grado 1 " + polinomio.evaluarRecursiva(2));
+////		System.out.println("Recursiva Grado 1 " + polinomio.evaluarRecursiva(2));
 //		Assert.assertEquals(7, polinomio.evaluarRecursiva(2), 0);
 //	}
-//
-//
-//	@Test
-//	public void recursivoParImparGrado3() {
-//		double[]coeficientes = {2,-3,5,0};
-//		Polinomio polinomio = new Polinomio(3, coeficientes);
-//		System.out.println("Recursiva Par o Impar Grado 3 " + polinomio.evaluarRecursivaParImpar(3));
-//		Assert.assertEquals(42,  polinomio.evaluarRecursivaParImpar(3) , 0);
-//	}
-//
-//	@Test
-//	public void recursivoParImparGrado6() {
-//		double[]coeficientes = {-5,3,0,-2,7,3,0};
-//		Polinomio polinomio = new Polinomio(6, coeficientes);
-//		//System.out.println("Multiplicacion Sucesiva Grado 6 " + polinomio.evaluarRecursivaParImpar(3));
-//		Assert.assertEquals(-2898, polinomio.evaluarRecursivaParImpar(3), 0);
-//	}	
-//
-//	@Test
-//	public void recursivoParImparGrado0() {
-//		double[]coeficientes = {2};
-//		Polinomio polinomio = new Polinomio(0, coeficientes);
-//		System.out.println("Recursiva Par o Impar Grado 0 " + polinomio.evaluarRecursivaParImpar(2));
-//		Assert.assertEquals(2, polinomio.evaluarRecursivaParImpar(2), 0);
-//	}
-//	
-//	@Test
-//	public void recursivoParImparGrado1() {
-//		double[]coeficientes = {2,3};
-//		Polinomio polinomio = new Polinomio(1, coeficientes);
-//		System.out.println("Recursiva Par o Impar Grado 1 " + polinomio.evaluarRecursivaParImpar(2));
-//		Assert.assertEquals(7, polinomio.evaluarRecursivaParImpar(2), 0);
-//	}	
+
+
+	@Test
+	public void recursivoParImparGrado3() {
+		double[]coeficientes = {1,1,1,0};//{2,-3,5,0};
+		Polinomio polinomio = new Polinomio(3, coeficientes);
+		System.out.println("Recursiva Par o Impar Grado 3 " + polinomio.evaluarRecursivaParImpar(2));
+		Assert.assertEquals(14,  polinomio.evaluarRecursivaParImpar(2) , 0);
+	}
+
+	@Test
+	public void recursivoParImparGrado6() {
+		double[]coeficientes = {-5,3,0,-2,7,3,0};
+		Polinomio polinomio = new Polinomio(6, coeficientes);
+		System.out.println("Recursiva Par o Impar Grado 6 " + polinomio.evaluarRecursivaParImpar(3));
+		Assert.assertEquals(-2898, polinomio.evaluarRecursivaParImpar(3), 0);
+	}	
+
+	@Test
+	public void recursivoParImparGrado0() {
+		double[]coeficientes = {2};
+		Polinomio polinomio = new Polinomio(0, coeficientes);
+		System.out.println("Recursiva Par o Impar Grado 0 " + polinomio.evaluarRecursivaParImpar(2));
+		Assert.assertEquals(2, polinomio.evaluarRecursivaParImpar(2), 0);
+	}
+	
+	@Test
+	public void recursivoParImparGrado1() {
+		double[]coeficientes = {2,3};
+		Polinomio polinomio = new Polinomio(1, coeficientes);
+		System.out.println("Recursiva Par o Impar Grado 1 " + polinomio.evaluarRecursivaParImpar(2));
+		Assert.assertEquals(7, polinomio.evaluarRecursivaParImpar(2), 0);
+	}	
 	
 	
 	@Test
